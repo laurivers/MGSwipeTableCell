@@ -218,7 +218,7 @@ typedef NS_ENUM(NSInteger, MGSwipeEasingFunction) {
 @interface MGSwipeTableCell : UITableViewCell
 
 /** optional delegate (not retained) */
-@property (nonatomic, weak, nullable) id<MGSwipeTableCellDelegate> delegate;
+@property (nonatomic, weak, nullable) id<MGSwipeTableCellDelegate> swipeDelegate;
 
 /** optional to use contentView alternative. Use this property instead of contentView to support animated views while swiping */
 @property (nonatomic, strong, readonly, nonnull) UIView * swipeContentView;
